@@ -1,0 +1,144 @@
+:root {
+  --green: #788770;
+  --yellow: #ece66d;
+  --white: #eaeaea;
+}
+
+body {
+  background-color: var(--green);
+  color: var(--yellow);
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  position: relative;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 10vw;
+  margin: 0 20px;
+  line-height: 1.4;
+}
+
+h2 {
+  bottom: 0;
+  position: fixed;
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 0 20px 20px;
+  font-weight: normal;
+}
+
+h2 a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: var(--yellow);
+}
+
+h2 a:hover {
+  text-decoration: none;
+}
+
+
+figure {
+  background: var(--white);
+  margin: 0;
+  position: relative;
+  width: 50vw;
+  cursor: url('./assets/cursor.svg') 25 25, pointer;
+}
+
+figcaption {
+  font-size: 36px;
+  font-weight: normal;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  bottom: 0;
+  color: var(--white);
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px 0;
+}
+
+img {
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  width: 50%;
+  opacity: 0;
+}
+
+.display {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
+
+aside {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: var(--yellow);
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-bar {
+  display: grid;
+  grid-row-gap: 12px;
+  color: var(--green);
+}
+
+progress {
+  border: 1px solid var(--green);
+  height: 20px;
+  width: 40vw;
+}
+
+progress[value]::-webkit-progress-bar {
+  background: var(--yellow);
+}
+progress[value]::-webkit-progress-value {
+  background: var(--green);
+}
+
+@media (max-width: 800px) {
+  section {
+    flex-direction: column;
+  }
+
+  figure {
+    flex-grow: 1;
+    width: 100vw;
+  }
+
+  figcaption {
+    font-size: 30px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 20px;
+    position: relative;
+  }
+}
