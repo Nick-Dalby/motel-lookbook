@@ -34,6 +34,6 @@ Here are some more examples of recent projects in my portfolio:
 
 **DeepL Translator:** https://github.com/Nick-Dalby/translator
 
-**Worshop:** https://github.com/Nick-Dalby/workshop-store
+**Workshop:** https://github.com/Nick-Dalby/workshop-store
 
 
