@@ -10,6 +10,7 @@ Image gallery built with React 🌵
 **Tech used:** HTML, CSS, JavaScript, React
 
 Single page image gallery built with React.
+
 Features:
 - custom cursor for navigation
 - loading progress component
